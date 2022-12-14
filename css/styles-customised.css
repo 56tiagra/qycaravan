@@ -1,3 +1,22 @@
 .navbar-brand-logo {
   height: 3rem;
 }
+
+
+.collaps-module .collapse:not(.show) {
+  display: block;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.collaps-module .collapsing {
+  height: 6rem;
+}
+
+.collaps-module a.collapsed::after {
+  content: '+ Show More';
+}
+
+.collaps-module a:not(.collapsed)::after {
+  content: '- Show Less';
+}
